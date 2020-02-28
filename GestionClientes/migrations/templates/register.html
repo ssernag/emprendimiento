@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{%block content %}
+    <h1>Registro de Usuarios</h1>
+    <form>
+    {% csrf_token %}
+    {{form.as_p}}
+<input type='submit' value='Save' />
+          <button> Registrar</button>
+    </form>
+ {%endblock %}
